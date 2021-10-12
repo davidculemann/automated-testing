@@ -7,13 +7,15 @@
  * @param {string[]} stringArr - array of strings
  * @returns {string} - the shortest string
  */
- function findShortestString(stringArr) {
-    let shortestString = stringArr[0];
-    for (let str of stringArr) {
-      if (str.length < shortestString.length) {
-        shortestString = str;
-      }
+function findShortestString(stringArr) {
+  let shortestString = stringArr[0];
+  for (let str of stringArr) {
+    if (str.length < shortestString.length) {
+      shortestString = str;
     }
-    return shortestString.length;
   }
-  
+  return shortestString.length;
+}
+
+// export function so it can be used in test file
+module.exports = findShortestString;
