@@ -11,5 +11,5 @@ test("findShortestString returns the earlier string in cases of joint shortest s
   expect(
     findShortestString(["one", "two", "three", "four", "five", "six", "seven"])
   ).toBe("one");
-  expect(findShortestString(["a", "aa", "a aa", "bbb", "bb", "b"])).toBe("a");
+  expect(findShortestString(["aa", "aa", "a aa", "bbb", "bb", "b"])).toBe("b");
 });
